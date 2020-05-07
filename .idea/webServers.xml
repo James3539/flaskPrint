@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="01a7a3f7-a1d2-4d5a-a9e8-3bc4d2f9f542" name="pihost" url="http://192.168.91.100">
+        <fileTransfer host="192.168.91.100" port="22" rootFolder="/home/pi/flaskprint" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

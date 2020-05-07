@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+
+body{
+    width:800px;
+    height:600px;
+    border: solid black 3px;
+    font-weight: bolder;
+}
+
+.row-1{
+     height:65px;
+     width: 800px;
+}
+
+.logo {
+    height: 60px;
+    width: 580px;
+    float: left;
+    border: solid black;
+    border-width: 0px 2px 2px 0px;
+
+}
+
+.logo-img{
+    height:58px;
+    width:572px;
+}
+
+.logo-right{
+    height: 60px;
+    width: 109px;
+    float: left;
+    text-align: center;
+    font-size: small;
+    border: solid black;
+    border-width: 0px 0px 2px 0px;
+}
+
+.row-2{
+     height:75px;
+     width: 800px;
+     text-align: center;
+     font-size: 7vh;
+     border: solid black;
+     border-width: 0px 0px 2px 0px;
+     font-size: 50px;
+}
+
+
+.row-3{
+     height:75px;
+     width: 800px;
+     text-align: center;
+     float: left;
+     border: solid black;
+     border-width: 0px 0px 2px 0px;
+}
+
+.row-3-sides{
+    height:75px;
+    width:150px;
+    float: left;
+}
+.row-3-side-top{
+    height:30px;
+    border: solid black;
+    border-width: 0px 0px 2px 0px;
+}
+
+.row-3-middle{
+    height:75px;
+    width:496px;
+    float: left;
+    font-size: 60px;
+    border: solid black;
+    border-width: 0px 2px 0px 2px;
+}
+
+
+.row-4{
+     height:75px;
+     width: 800px;
+     text-align: center;
+     float: left;
+}
+
+.row-4-sides{
+    height:75px;
+    width:150px;
+    float: left;
+}
+.row-4-side-top-left{
+    width:150px;
+    height:30px;
+    border: solid black;
+    border-width: 0px 0px 2px 0px;
+    text-align: right;
+}
+
+.row-4-middle{
+    height:75px;
+    width:496px;
+    float: left;
+}
+
+.row-4-middle-items{
+    height:30px;
+    width:496px;
+    float: left;
+    border: solid black;
+    border-width: 0px 2px 2px 2px;
+}
+
+.row-4-side-top-right{
+    width:155px;
+    height:30px;
+    border: solid black;
+    border-width: 0px 0px 2px 0px;
+    text-align: center;
+}
+
+
+/** ROW 5   */
+.row-5{
+     height:30px;
+     margin-top: -11px;
+     width: 800px;
+     float:left;
+     text-align: center;
+     border: solid black;
+     border-width: 0px 0px 2px 0px;
+}
+
+.row-5-left{
+     height:30px;
+     width: 150px;
+     float: left;
+     border: solid black;
+     border-width: 0px 2px 0px 0px;
+}
+
+.row-5-middle{
+    height:30px;
+    width: 164px;
+    float: left;
+    border: solid black;
+    border-width: 0px 2px 0px 0px;
+}
+
+.row-5-right{
+     height:30px;
+     width: 145px;
+     float: left;
+}
+
+/** ROW 6   */
+.row-6{
+     height:30px;
+     width: 800px;
+     float:left;
+     text-align: center;
+     border: solid black;
+     border-width: 0px 0px 2px 0px;
+}
+
+.row-6-left{
+     height:30px;
+     width: 150px;
+     float: left;
+     border: solid black;
+     border-width: 0px 2px 0px 0px;
+}
+
+.row-6-middle{
+    height:30px;
+    width: 164px;
+    float: left;
+    border: solid black;
+    border-width: 0px 2px 0px 0px;
+}
+
+.row-6-right{
+     height:30px;
+     width: 145px;
+     float: left;
+}
+
+ /** ROW 7 */
+.row-7{
+     height:30px;
+     width: 800px;
+     float:left;
+     text-align: center;
+     border: solid black;
+     border-width: 0px 0px 2px 0px;
+}
+
+.row-7-items{
+     height:30px;
+     width: 263px;
+     float: left;
+}
+
+.row-7-border-right{
+     border: solid black;
+     border-width: 0px 2px 0px 0px;
+}
+
+
+ /** ROW 8 */
+.row-8{
+     height:30px;
+     width: 800px;
+     float:left;
+     text-align: center;
+     border: solid black;
+     border-width: 0px 0px 2px 0px;
+}
+
+.row-8-1{
+    width: 30px;
+}
+
+.row-8-2{
+    width: 135px;
+}
+
+.row-8-3{
+    width: 150px;
+}
+
+.row-8-4{
+    width: 102px;
+}
+
+.row-8-5{
+    width: 103px;
+}
+
+.row-8-6{
+    width: 225px;
+}
+
+
+.row-8-border-right{
+     border: solid black;
+     border-width: 0px 2px 0px 0px;
+}
+
+</style>
+
+<div class="row-1 container">
+   <div class="logo border1">
+       <img class="logo-img" src="file:///Z:/Tom/flaskPrint/templates/coater_1/logo_test.png"/>
+    </div>
+   <div class="logo-right border1">
+       <label>Revision Date</label>
+       <label>Revision Number</label>
+       <label>Forms</label>
+   </div>
+   <div class="logo-right border1">
+       <div>05-Oct-17</div>
+       <div>1</div>
+       <div>38</div>
+   </div>
+</div>
+
+<div class="row-2">
+    <label>M-TE-H-HG</label>
+</div>
+
+<div class="row-3">
+    <div class="row-3-sides">
+        <div class="row-3-side-top">ROLL-NO.</div>
+        <div style="padding-top: 15px;">C3259-0420</div>
+    </div>
+    <div class="row-3-middle">
+        4040
+    </div>
+    <div class="row-3-sides">
+        <div class="row-3-side-top">OPERATOR</div>
+        <div style="padding-top: 15px;">SANDILE</div>
+    </div>
+</div>
+
+<div class="row-4">
+    <div class="row-4-sides">
+        <div class="row-4-side-top-left">DATE</div>
+        <div class="row-4-side-top-left">TIME</div>
+    </div>
+    <div class="row-4-middle">
+            <div class="row-4-middle-items">09-04-2020</div>
+            <div class="row-4-middle-items">09:32</div>
+    </div>
+    <div class="row-4-sides">
+        <div class="row-4-side-top-right">GROSS LENGHT</div>
+        <div class="row-4-side-top-right">4040</div>
+    </div>
+</div>
+
+<div class="row-5">
+    <div class="row-5-left">Backing</div>
+    <div class="row-5-middle">Flag 1</div>
+    <div class="row-5-middle">Flag 2</div>
+    <div class="row-5-middle">Flag 3</div>
+    <div class="row-5-right">TOPSHEET</div>
+</div>
+<div class="row-6">
+    <div class="row-6-left">ROSSELLA</div>
+    <div class="row-6-middle">&nbsp;</div>
+    <div class="row-6-middle">&nbsp;</div>
+    <div class="row-6-middle">&nbsp;</div>
+    <div class="row-6-right">HANSOL</div>
+</div>
+
+<div class="row-7">
+    <div class="row-7-items row-7-border-right">DRIVE</div>
+    <div class="row-7-items row-7-border-right">MIDDLE</div>
+    <div class="row-7-items">OP</div>
+</div>
+
+<div class="row-7">
+    <div class="row-7-items row-7-border-right">&nbsp;</div>
+    <div class="row-7-items row-7-border-right">&nbsp;</div>
+    <div class="row-7-items">&nbsp;</div>
+</div>
+
+<div class="row-8">
+    <div class="row-7-items row-8-1 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-2 row-8-border-right">WO</div>
+    <div class="row-7-items row-8-3 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-4 row-8-border-right">OPERATOR</div>
+    <div class="row-7-items row-8-5 row-8-border-right">RETURNED</div>
+    <div class="row-7-items row-8-6 ">&nbsp;</div>
+</div>
+
+<div class="row-8">
+    <div class="row-7-items row-8-1 row-8-border-right">1</div>
+    <div class="row-7-items row-8-2 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-3 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-4 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-5 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-6 ">&nbsp;</div>
+</div>
+
+<div class="row-8">
+    <div class="row-7-items row-8-1 row-8-border-right">2</div>
+    <div class="row-7-items row-8-2 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-3 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-4 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-5 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-6 ">&nbsp;</div>
+</div>
+
+<div class="row-8">
+    <div class="row-7-items row-8-1 row-8-border-right">3</div>
+    <div class="row-7-items row-8-2 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-3 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-4 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-5 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-6 ">&nbsp;</div>
+</div>
+
+<div class="row-8">
+    <div class="row-7-items row-8-1 row-8-border-right">4</div>
+    <div class="row-7-items row-8-2 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-3 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-4 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-5 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-6 ">&nbsp;</div>
+</div>
+
+<div class="row-8">
+    <div class="row-7-items row-8-1 row-8-border-right">5</div>
+    <div class="row-7-items row-8-2 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-3 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-4 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-5 row-8-border-right">&nbsp;</div>
+    <div class="row-7-items row-8-6 ">&nbsp;</div>
+</div>
+
+
+
+<body>
+
+</body>
+</html>
