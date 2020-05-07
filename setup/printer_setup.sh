@@ -2,11 +2,8 @@
 
 #!/bin/bash
 cd ~
-sudo git clone https://github.com/James3539/flaskPrint.git
-cd flaskPrint
-
 sudo apt -y  update
-sudo apt -y  full-upgrade
+#sudo apt -y  full-upgrade
 sudo apt-get -y install nginx
 sudo apt-get -y install python3-pip
 sudo apt-get -y install wkhtmltopdf
