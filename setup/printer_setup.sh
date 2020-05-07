@@ -1,10 +1,7 @@
 
+
 #!/bin/bash
-
 cd ~
-<<<<<<< HEAD
-=======
-
 sudo git clone https://github.com/James3539/flaskPrint.git
 cd flaskPrint
 
@@ -35,18 +32,17 @@ tar -xvzf "ARGOX_RPi_Printer_Driver-V1.5.0(armhf).tar.gz"
 cd 'ARGOX_RPi_Printer_Driver-V1.5.0(armhf)'
 sudo ./install
 
-<<<<<<< HEAD
+
 cd ~
 sudo git clone https://github.com/James3539/flaskPrint.git
-
 sudo chown www-data /home/pi/flaskPrint
-
+sudo cp /pi/home/flaskPrint/setup/rc.local  /etc/rc.local
 sudo rm /etc/nginx/sites-enabled/default
+sudo /pi/home/flaskPrint/setup/flaskPrint_proxy   /etc/nginx/sites-available/flaskPrint_proxy
+sudo ln -s /etc/nginx/sites-available/flaskPrint_proxy /etc/nginx/sites-enabled
 
+sudo service nginx restart
 
-
-=======
->>>>>>> github/master
 
 
 
