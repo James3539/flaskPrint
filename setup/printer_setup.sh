@@ -5,7 +5,6 @@ cd ~
 sudo git clone https://github.com/James3539/flaskPrint.git
 cd flaskPrint
 
->>>>>>> github/master
 sudo apt -y  update
 sudo apt -y  full-upgrade
 sudo apt-get -y install nginx
@@ -36,9 +35,9 @@ sudo ./install
 cd ~
 sudo git clone https://github.com/James3539/flaskPrint.git
 sudo chown www-data /home/pi/flaskPrint
-sudo cp /pi/home/flaskPrint/setup/rc.local  /etc/rc.local
+sudo cp flaskPrint/setup/rc.local  /etc/rc.local
 sudo rm /etc/nginx/sites-enabled/default
-sudo /pi/home/flaskPrint/setup/flaskPrint_proxy   /etc/nginx/sites-available/flaskPrint_proxy
+sudo cp flaskPrint/setup/flaskPrint_proxy   /etc/nginx/sites-available/flaskPrint_proxy
 sudo ln -s /etc/nginx/sites-available/flaskPrint_proxy /etc/nginx/sites-enabled
 
 sudo service nginx restart
