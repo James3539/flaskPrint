@@ -1,6 +1,7 @@
 
 
 #!/bin/bash
+sudo su
 cd ~
 sudo apt -y  update
 #sudo apt -y  full-upgrade
@@ -20,7 +21,7 @@ sudo pip3 install imgkit
 sudo pip3 install pycups
 sudo pip3 install beautifulsoup4
 
-cd ~
+cd /home/pi
 mkdir downloads
 cd downloads
 sudo  wget 'http://www.argox.com/wp-content/uploads/largedriver/ARGOX_RPi_Printer_Driver-V1.5.0(armhf).tar.gz'
@@ -30,9 +31,9 @@ sudo ./install
 
 cd ~
 sudo chown www-data /home/pi/flaskPrint
-sudo cp flaskPrint/setup/rc.local  /etc/rc.local
+sudo cp /home/pi/flaskPrint/setup/rc.local  /etc/rc.local
 sudo rm /etc/nginx/sites-enabled/default
-sudo cp flaskPrint/setup/flaskPrint_proxy   /etc/nginx/sites-available/flaskPrint_proxy
+sudo cp /home/pi/flaskPrint/setup/flaskPrint_proxy   /etc/nginx/sites-available/flaskPrint_proxy
 sudo ln -s /etc/nginx/sites-available/flaskPrint_proxy /etc/nginx/sites-enabled
 
 sudo service nginx restart

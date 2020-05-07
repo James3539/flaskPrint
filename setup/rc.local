@@ -18,7 +18,7 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-/usr/local/bin/uwsgi --ini /home/pi/flaskPrint/uwsgi_config.ini --uid www-data --gid www-data --daemonize /var/log/uwsgi.log
+/usr/local/bin/uwsgi --ini flaskPrint/uwsgi_config.ini --uid www-data --gid www-data --daemonize /var/log/uwsgi.log
 
 exit 0
 
