@@ -25,6 +25,7 @@ sudo pip3 install flask-api
 sudo pip3 install Pillow
 sudo pip3 install imgkit
 sudo pip3 install pycups
+sudo pip3 install beautifulsoup4
 
 cd ~
 mkdir downloads
@@ -39,6 +40,11 @@ cd ~
 sudo git clone https://github.com/James3539/flaskPrint.git
 
 sudo chown www-data /home/pi/flaskPrint
+
+sudo rm /etc/nginx/sites-enabled/default
+
+
+
 =======
 >>>>>>> github/master
 
