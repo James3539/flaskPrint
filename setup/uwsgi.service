@@ -1,0 +1,9 @@
+[Unit]
+Description=uWSGI instance
+
+[Service]
+ExecStartPre=-/bin/bash -c 'mkdir -p /run/uwsgi; chown www-data:www-data /run/uwsgi;'
+ExecStart=/bin/bash -c 'cd /home/pi/flaskPrint; uwsgi --ini uwsgi_config.ini'
+
+[Install]
+WantedBy=multi-user.target

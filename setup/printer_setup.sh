@@ -37,6 +37,8 @@ sudo pip3 install flask uwsgi flask-api Pillow imgkit beautifulsoup4 pycups
 
 sudo git clone https://github.com/James3539/flaskPrint.git
 sudo chown www-data /home/pi/flaskPrint
+
+
 sudo cp /home/pi/flaskPrint/setup/rc.local  /etc/rc.local
 sudo cp /home/pi/flaskPrint/setup/flaskPrint_proxy   /etc/nginx/sites-available/flaskPrint_proxy
 sudo ln -s /etc/nginx/sites-available/flaskPrint_proxy /etc/nginx/sites-enabled
