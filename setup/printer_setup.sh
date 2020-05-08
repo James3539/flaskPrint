@@ -11,7 +11,6 @@ sudo apt-get -y install libcups2-dev
 sudo apt-get -y install libopenjp2-7
 sudo usermod -a -G lpadmin pi
 
-
 #Setup Printer
 cd /home/pi
 mkdir downloads
@@ -30,22 +29,19 @@ sudo apt-get -y install python3-pip
 sudo apt-get -y install wkhtmltopdf
 sudo apt-get -y install build-essential python-dev
 
-
-
 sudo apt-get install python3-dev python3-setuptools
 sudo pip3 install flask uwsgi flask-api Pillow imgkit beautifulsoup4 pycups
 
 sudo git clone https://github.com/James3539/flaskPrint.git
 sudo chown www-data /home/pi/flaskPrint
 
-
-sudo cp /home/pi/flaskPrint/setup/rc.local  /etc/rc.local
 sudo cp /home/pi/flaskPrint/setup/flaskPrint_proxy   /etc/nginx/sites-available/flaskPrint_proxy
 sudo ln -s /etc/nginx/sites-available/flaskPrint_proxy /etc/nginx/sites-enabled
 sudo cp /home/pi/flaskPrint/setup/cupsd.conf /etc/cups/cupsd.conf
-sudo service nginx restart
+sudo cp /home/pi/flaskPrint/setup/uwsgi.service /etc/systemd/system/uwsgi.service
 
-
+sudo systemctl daemon-reload
+sudo systemctl enable uwsgi
 
 
 
