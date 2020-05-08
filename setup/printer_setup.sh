@@ -32,7 +32,6 @@ sudo apt-get -y install build-essential python-dev
 sudo apt-get install python3-dev python3-setuptools
 sudo pip3 install flask uwsgi flask-api Pillow imgkit beautifulsoup4 pycups
 
-sudo git clone https://github.com/James3539/flaskPrint.git
 sudo chown www-data /home/pi/flaskPrint
 
 sudo cp /home/pi/flaskPrint/setup/flaskPrint_proxy   /etc/nginx/sites-available/flaskPrint_proxy
@@ -42,6 +41,8 @@ sudo cp /home/pi/flaskPrint/setup/uwsgi.service /etc/systemd/system/uwsgi.servic
 
 sudo systemctl daemon-reload
 sudo systemctl enable uwsgi
+
+sudo reboot
 
 
 
